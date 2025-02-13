@@ -61,7 +61,6 @@ export function Header() {
           <div className="relative flex items-center justify-between px-6 py-3">
             <Link href="/" className="flex items-center gap-3">
               <Brand className="h-8 w-8" />
-              <span className="text-xl font-bold text-white">Dara</span>
             </Link>
 
             <div className="hidden items-center gap-6 md:flex">

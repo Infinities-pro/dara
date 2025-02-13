@@ -1,13 +1,10 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-
 import { useLogin } from '@privy-io/react-auth';
 
 import BlurFade from '@/components/ui/blur-fade';
-import { Button } from '@/components/ui/button';
 import { RainbowButton } from '@/components/ui/rainbow-button';
-import { createChat } from '@/server/actions/chat';
 
 export function HeroSection() {
   const router = useRouter();
