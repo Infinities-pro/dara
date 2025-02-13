@@ -16,7 +16,6 @@ import { Badge } from '@/components/ui/badge';
 import BlurFade from '@/components/ui/blur-fade';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import ShootingStars from '@/components/ui/shooting-stars';
 import TypingAnimation from '@/components/ui/typing-animation';
 import { useConversations } from '@/hooks/use-conversations';
 import { useUser } from '@/hooks/use-user';
@@ -120,31 +119,15 @@ export function HomeContent() {
   }
 
   const mainContent = (
-    <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col items-center justify-center px-6 py-12">
+    <div className="relative min-h-screen bg-gradient-to-b from-[#0A0A0B] via-[#0D0B1F] to-[#0A0A0B]">
       {/* Background elements */}
-      <div className="fixed inset-0">
-        {/* Dark gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#07071C] via-[#0D0B1F] to-[#07071C]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#4F46E5]/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-[url('/mesh.png')] opacity-[0.015] mix-blend-screen" />
+      <div className="absolute -left-24 top-24 h-48 w-48 animate-pulse rounded-full bg-[#4F46E5]/20 blur-[100px]" />
+      <div className="absolute -right-24 bottom-24 h-48 w-48 animate-pulse rounded-full bg-purple-500/20 blur-[100px] delay-1000" />
+      <div className="absolute inset-0 bg-[url('/grid.png')] opacity-[0.02]" />
 
-        {/* Animated gradient overlay */}
-        <div className="absolute inset-0 animate-pulse bg-gradient-to-b from-transparent via-[#FF4D4D]/5 to-transparent" />
-
-        {/* Mesh texture */}
-        <div className="absolute inset-0 bg-[url('/mesh.png')] opacity-[0.015] mix-blend-screen" />
-
-        {/* Grid overlay */}
-        <div className="absolute inset-0 bg-[url('/grid.png')] opacity-[0.02]" />
-
-        {/* Gradient orbs */}
-        <div className="absolute -left-1/4 top-0 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-[#FF4D4D] to-[#FFB347] opacity-20 blur-[120px]" />
-        <div className="absolute -right-1/4 top-1/3 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-[#FF4D4D] to-[#FFB347] opacity-20 blur-[120px]" />
-
-        {/* Shooting stars effect */}
-        <ShootingStars />
-      </div>
-
-      {/* Content */}
-      <div className="relative mx-auto w-full max-w-3xl space-y-8">
+      <div className="relative z-10">
         {/* Header Card */}
         <div className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-br from-[#FF4D4D]/5 via-[#FF8F3F]/5 to-[#FFB347]/5 p-6 shadow-2xl backdrop-blur-md transition-all duration-300 hover:border-white/[0.12]">
           <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-r from-[#FF4D4D] to-[#FFB347] opacity-20 blur-[50px] transition-opacity group-hover:opacity-30" />
@@ -222,3 +205,5 @@ export function HomeContent() {
     </div>
   );
 }
+
+export default HomeContent;

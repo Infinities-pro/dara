@@ -18,7 +18,7 @@ export function LandingPage() {
       {/* See what I can do section */}
       <section className="relative py-24">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="mb-16 text-center text-4xl font-medium text-white">
+          <h2 className="mb-16 text-center text-4xl font-medium tracking-tight">
             see what i can do{' '}
             <span
               role="img"
@@ -30,46 +30,52 @@ export function LandingPage() {
           </h2>
 
           <Marquee className="py-4" speed={25}>
-            {/* Market Sentiment Card */}
-            <div className="group relative flex h-[220px] w-[320px] shrink-0 flex-col overflow-hidden rounded-2xl border-2 border-white/20 bg-black/20 p-4 shadow-2xl backdrop-blur-md transition-all duration-300 hover:border-white/30">
-              <div className="mb-2.5 flex items-center gap-2.5">
-                <div className="rounded-full bg-gradient-to-br from-[#FF5E5E] to-[#FFB956] p-2">
+            {/* Bundle Checker Card */}
+            <div className="group relative mx-4 flex h-[240px] w-[340px] shrink-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.03] to-white/[0.08] p-6 shadow-2xl backdrop-blur-md transition-all duration-500 hover:border-white/20 hover:shadow-[#FFB347]/5">
+              {/* Subtle gradient orb */}
+              <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-r from-[#FF5E5E]/20 to-[#FFB956]/20 blur-[32px] transition-opacity group-hover:opacity-70" />
+
+              <div className="mb-4 flex items-center gap-3">
+                <div className="rounded-xl bg-gradient-to-br from-[#FF5E5E] to-[#FFB956] p-2.5 shadow-lg">
                   <svg
-                    className="h-4 w-4 text-white"
+                    className="h-5 w-5 text-white"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
                   >
                     <path
-                      d="M7 7h10M7 12h10m-10 5h10"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-medium text-white">
-                  What is the current sentiment?
+                <h3 className="text-base font-medium text-white">
+                  Bundle Checker
                 </h3>
               </div>
-              <div className="flex flex-1 flex-col justify-between">
-                <p className="text-sm text-white/60">
-                  Real-time sentiment analysis from X and beyond.
+
+              <div className="relative flex flex-1 flex-col justify-between">
+                <p className="text-base leading-relaxed text-white/70 transition-colors group-hover:text-white/80">
+                  Detect token bundles and analyze launch patterns.
                 </p>
-                <p className="mt-auto text-xs text-white/40">
-                  Dara analyzes market sentiment across crypto sectors by
-                  monitoring social signals from Twitter (X) and Threads
-                  discussions.
+                <p className="mt-auto text-sm text-white/40 transition-colors group-hover:text-white/50">
+                  Scan for suspicious block activity, insider trading signals,
+                  and token distribution anomalies at launch.
                 </p>
               </div>
             </div>
 
             {/* Twitter History Card */}
-            <div className="group relative flex h-[220px] w-[320px] shrink-0 flex-col overflow-hidden rounded-2xl border-2 border-white/20 bg-black/20 p-4 shadow-2xl backdrop-blur-md transition-all duration-300 hover:border-white/30">
-              <div className="mb-2.5 flex items-center gap-2.5">
-                <div className="rounded-full bg-gradient-to-br from-[#FF5E5E] to-[#FFB956] p-2">
+            <div className="group relative mx-4 flex h-[240px] w-[340px] shrink-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.03] to-white/[0.08] p-6 shadow-2xl backdrop-blur-md transition-all duration-500 hover:border-white/20 hover:shadow-[#FFB347]/5">
+              {/* Subtle gradient orb */}
+              <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-r from-[#FF5E5E]/20 to-[#FFB956]/20 blur-[32px] transition-opacity group-hover:opacity-70" />
+
+              <div className="mb-4 flex items-center gap-3">
+                <div className="rounded-xl bg-gradient-to-br from-[#FF5E5E] to-[#FFB956] p-2.5 shadow-lg">
                   <svg
-                    className="h-4 w-4 text-white"
+                    className="h-5 w-5 text-white"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -82,15 +88,16 @@ export function LandingPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-medium text-white">
+                <h3 className="text-base font-medium text-white">
                   Get twitter handle history
                 </h3>
               </div>
-              <div className="flex flex-1 flex-col justify-between">
-                <p className="text-sm text-white/60">
+
+              <div className="relative flex flex-1 flex-col justify-between">
+                <p className="text-base leading-relaxed text-white/70 transition-colors group-hover:text-white/80">
                   Track username changes and account history.
                 </p>
-                <p className="mt-auto text-xs text-white/40">
+                <p className="mt-auto text-sm text-white/40 transition-colors group-hover:text-white/50">
                   Dara leverages Twitter (X) APIs to reveal the complete history
                   and evolution of any handle over time.
                 </p>
@@ -98,11 +105,14 @@ export function LandingPage() {
             </div>
 
             {/* Whale Info Card */}
-            <div className="group relative flex h-[220px] w-[320px] shrink-0 flex-col overflow-hidden rounded-2xl border-2 border-white/20 bg-black/20 p-4 shadow-2xl backdrop-blur-md transition-all duration-300 hover:border-white/30">
-              <div className="mb-2.5 flex items-center gap-2.5">
-                <div className="rounded-full bg-gradient-to-br from-[#FF5E5E] to-[#FFB956] p-2">
+            <div className="group relative mx-4 flex h-[240px] w-[340px] shrink-0 flex-col overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.03] to-white/[0.08] p-6 shadow-2xl backdrop-blur-md transition-all duration-500 hover:border-white/20 hover:shadow-[#FFB347]/5">
+              {/* Subtle gradient orb */}
+              <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-r from-[#FF5E5E]/20 to-[#FFB956]/20 blur-[32px] transition-opacity group-hover:opacity-70" />
+
+              <div className="mb-4 flex items-center gap-3">
+                <div className="rounded-xl bg-gradient-to-br from-[#FF5E5E] to-[#FFB956] p-2.5 shadow-lg">
                   <svg
-                    className="h-4 w-4 text-white"
+                    className="h-5 w-5 text-white"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -115,15 +125,16 @@ export function LandingPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-medium text-white">
+                <h3 className="text-base font-medium text-white">
                   Retrieve whale info
                 </h3>
               </div>
-              <div className="flex flex-1 flex-col justify-between">
-                <p className="text-sm text-white/60">
+
+              <div className="relative flex flex-1 flex-col justify-between">
+                <p className="text-base leading-relaxed text-white/70 transition-colors group-hover:text-white/80">
                   Deep dive into token holder analytics.
                 </p>
-                <p className="mt-auto text-xs text-white/40">
+                <p className="mt-auto text-sm text-white/40 transition-colors group-hover:text-white/50">
                   Dara provides detailed insights into whale activity and token
                   distribution patterns with comprehensive analytics.
                 </p>

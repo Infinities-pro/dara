@@ -7,27 +7,47 @@ export function ValueProps() {
   return (
     <div className="mt-32">
       <BlurFade className="mb-16 text-center">
-        <h2 className="text-4xl font-bold">
-          Your AI Copilot for Solana Trading
+        <div className="mx-auto mb-8 h-px w-24 bg-gradient-to-r from-transparent via-[#FFB347]/30 to-transparent" />
+
+        <div className="mb-4 inline-block rounded-full bg-gradient-to-r from-[#FF4D4D]/10 to-[#FFB347]/10 px-4 py-1.5 backdrop-blur-sm">
+          <span className="bg-gradient-to-r from-[#FF4D4D] to-[#FFB347] bg-clip-text text-sm font-medium text-transparent">
+            FEATURES
+          </span>
+        </div>
+        <h2 className="relative mx-auto max-w-2xl text-4xl font-bold">
+          <span className="relative inline-block">
+            Dara handles everything for you
+            <span className="text-[#FFB347]">.</span>
+            <div className="absolute inset-0 -z-10 translate-x-[-100%] bg-gradient-to-r from-transparent via-white/5 to-transparent transition-transform duration-1000 group-hover:translate-x-[100%]" />
+          </span>
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-white/60">
-          Get intelligent market insights, real-time analysis, and smart trading
-          suggestions. Let AI enhance your Solana trading strategy.
-        </p>
       </BlurFade>
 
       <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-2">
         <ScrollReveal>
-          <div className="group relative h-full overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF4D4D]/10 via-[#FF8F3F]/10 to-[#FFB347]/10 p-12 backdrop-blur-sm">
+          <div className="motion-safe:animate-fade-in motion-safe:animate-delay-200 group relative h-full overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-br from-[#FF4D4D]/5 via-[#FF8F3F]/5 to-[#FFB347]/5 p-12 shadow-2xl backdrop-blur-md transition-all duration-500 hover:translate-y-[-2px] hover:border-white/[0.12] hover:shadow-[#FFB347]/5">
+            <div className="pointer-events-none absolute inset-0 bg-[url('/mesh.png')] opacity-[0.02] mix-blend-overlay" />
+            <div className="pointer-events-none absolute inset-0 bg-[url('/grid.png')] opacity-[0.01] mix-blend-overlay" />
+
             <div className="relative">
-              <h3 className="mb-3 text-3xl font-semibold">
-                Dara is the whole package.
+              <div className="animate-gradient-x mb-4 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FF4D4D]/10 via-[#FFB347]/10 to-[#FF4D4D]/10 bg-[length:200%_100%] px-3 py-1">
+                <div className="h-2 w-2 rounded-full bg-[#FFB347] shadow-[0_0_8px_rgba(255,179,71,0.5)] transition-all duration-300 group-hover:shadow-[0_0_12px_rgba(255,179,71,0.7)]" />
+                <span className="text-sm font-medium text-white/80 transition-all duration-300 group-hover:tracking-wide group-hover:text-white">
+                  AI Assistant
+                </span>
+              </div>
+
+              <h3 className="mb-3 text-3xl font-semibold transition-all duration-300 group-hover:text-[#FFB347]">
+                Dara is the whole package
+                <span className="text-[#FFB347] transition-opacity group-hover:opacity-80">
+                  .
+                </span>
               </h3>
-              <p className="text-lg text-white/60">
+              <p className="text-lg text-white/60 transition-colors group-hover:text-white/70">
                 it&apos;s the only companion you need.
               </p>
 
-              <div className="mt-8 rounded-2xl bg-white p-6">
+              <div className="mt-8 rounded-2xl bg-white/[0.95] p-6 shadow-lg backdrop-blur-sm transition-all duration-300 group-hover:scale-[1.01] group-hover:bg-white group-hover:shadow-xl group-hover:ring-1 group-hover:ring-white/20">
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center gap-3">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-black text-2xl font-bold text-white">
@@ -81,15 +101,24 @@ export function ValueProps() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <div className="group relative h-full overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF4D4D]/10 via-[#FF8F3F]/10 to-[#FFB347]/10 p-12 backdrop-blur-sm">
+          <div className="motion-safe:animate-fade-in motion-safe:animate-delay-200 group relative h-full overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-br from-[#FF4D4D]/5 via-[#FF8F3F]/5 to-[#FFB347]/5 p-12 shadow-2xl backdrop-blur-md transition-all duration-500 hover:translate-y-[-2px] hover:border-white/[0.12] hover:shadow-[#FFB347]/5">
             <div className="relative">
-              <h3 className="mb-3 text-3xl font-semibold">Twitter Checker</h3>
+              <div className="mb-4 inline-block rounded-full bg-gradient-to-r from-[#FF4D4D]/10 to-[#FFB347]/10 px-3 py-1">
+                <span className="text-sm font-medium text-white/80">
+                  Analytics
+                </span>
+              </div>
+
+              <h3 className="mb-3 text-3xl font-semibold transition-colors group-hover:text-[#FFB347]">
+                Twitter Checker
+                <span className="text-[#FFB347]">.</span>
+              </h3>
               <p className="text-lg text-white/60">
                 Check any Twitter username&apos;s history instantly - usernames,
                 display names, bios & more.
               </p>
 
-              <div className="mt-8 rounded-2xl bg-white p-6">
+              <div className="mt-8 rounded-2xl bg-white/[0.95] p-6 shadow-lg backdrop-blur-sm">
                 <div className="flex h-full flex-col justify-between">
                   <div className="space-y-6 text-black">
                     <div className="space-y-4">
@@ -129,6 +158,10 @@ export function ValueProps() {
             </div>
           </div>
         </ScrollReveal>
+      </div>
+
+      <div className="pointer-events-none mt-16">
+        <div className="mx-auto h-px w-48 bg-gradient-to-r from-transparent via-[#FFB347]/20 to-transparent" />
       </div>
     </div>
   );
