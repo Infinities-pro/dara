@@ -24,7 +24,7 @@ export function ValueProps() {
                 Dara is the whole package.
               </h3>
               <p className="text-lg text-white/60">
-                have everything you need in one place.
+                it&apos;s the only companion you need.
               </p>
 
               <div className="mt-8 rounded-2xl bg-white p-6">
@@ -85,7 +85,7 @@ export function ValueProps() {
             <div className="relative">
               <h3 className="mb-3 text-3xl font-semibold">Twitter Checker</h3>
               <p className="text-lg text-white/60">
-                Check any Twitter username's history instantly - usernames,
+                Check any Twitter username&apos;s history instantly - usernames,
                 display names, bios & more.
               </p>
 

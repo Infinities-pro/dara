@@ -150,8 +150,8 @@ export function HomeContent() {
           <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-r from-[#FF4D4D] to-[#FFB347] opacity-20 blur-[50px] transition-opacity group-hover:opacity-30" />
           <h1 className="text-4xl font-bold sm:text-6xl">Twitter Checker</h1>
           <p className="text-lg text-white/60">
-            Check any Twitter username's history instantly - usernames, display
-            names, bios & more.
+            Check any Twitter username&apos;s history instantly - usernames,
+            display names, bios & more.
           </p>
         </div>
 
