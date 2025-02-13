@@ -81,13 +81,15 @@ export function ValueProps() {
                 Dara is your friend.
               </h3>
               <p className="text-lg text-white/60">
-                Dara adapts to you. it's the only companion you need.
+                Dara adapts to you. it&apos;s the only companion you need.
               </p>
 
               <div className="mt-8 rounded-2xl bg-white p-6">
                 <div className="space-y-6 text-black">
                   <div className="rounded-xl bg-[#FF4D4D]/10 p-4">
-                    <h4 className="mb-4 font-medium">Dara's Suggestions</h4>
+                    <h4 className="mb-4 font-medium">
+                      Dara&apos;s Suggestions
+                    </h4>
                     <div className="space-y-4">
                       <div>
                         <h5 className="mb-2 font-medium">Key Insights</h5>
