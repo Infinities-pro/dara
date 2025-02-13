@@ -7,12 +7,18 @@ export function ValueProps() {
   return (
     <div className="mt-32">
       <BlurFade className="mb-16 text-center">
-        <h2 className="text-4xl font-bold">Solana made simple by AI.</h2>
+        <h2 className="text-4xl font-bold">
+          Your AI Copilot for Solana Trading
+        </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-lg text-white/60">
+          Get intelligent market insights, real-time analysis, and smart trading
+          suggestions. Let AI enhance your Solana trading strategy.
+        </p>
       </BlurFade>
 
       <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-2">
         <ScrollReveal>
-          <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF4D4D]/10 via-[#FF8F3F]/10 to-[#FFB347]/10 p-12 backdrop-blur-sm">
+          <div className="group relative h-full overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF4D4D]/10 via-[#FF8F3F]/10 to-[#FFB347]/10 p-12 backdrop-blur-sm">
             <div className="relative">
               <h3 className="mb-3 text-3xl font-semibold">
                 Dara is the whole package.
@@ -75,44 +81,49 @@ export function ValueProps() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF4D4D]/10 via-[#FF8F3F]/10 to-[#FFB347]/10 p-12 backdrop-blur-sm">
+          <div className="group relative h-full overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF4D4D]/10 via-[#FF8F3F]/10 to-[#FFB347]/10 p-12 backdrop-blur-sm">
             <div className="relative">
-              <h3 className="mb-3 text-3xl font-semibold">
-                Dara is your friend.
-              </h3>
+              <h3 className="mb-3 text-3xl font-semibold">Twitter Checker</h3>
               <p className="text-lg text-white/60">
-                Dara adapts to you. it&apos;s the only companion you need.
+                Check any Twitter username's history instantly - usernames,
+                display names, bios & more.
               </p>
 
               <div className="mt-8 rounded-2xl bg-white p-6">
-                <div className="space-y-6 text-black">
-                  <div className="rounded-xl bg-[#FF4D4D]/10 p-4">
-                    <h4 className="mb-4 font-medium">
-                      Dara&apos;s Suggestions
-                    </h4>
+                <div className="flex h-full flex-col justify-between">
+                  <div className="space-y-6 text-black">
                     <div className="space-y-4">
-                      <div>
-                        <h5 className="mb-2 font-medium">Key Insights</h5>
-                        <p className="text-sm text-black/60">
-                          Over the past week, a significant portion of your
-                          trades has been concentrated in AI-based tokens. While
-                          these tokens performed well recently, the broader
-                          market trend is shifting.
-                        </p>
+                      <div className="flex items-center justify-between border-b border-black/10 pb-4">
+                        <span>Username History (1)</span>
+                        <span className="text-black/60">
+                          @elonmusk • Dec 30, 2011
+                        </span>
                       </div>
+
                       <div>
-                        <h5 className="mb-2 font-medium">
-                          Portfolio Diversification
-                        </h5>
-                        <p className="text-sm text-black/60">
-                          Your portfolio leans heavily toward high-volatility
-                          tokens in the AI sector. While the upside is
-                          appealing, the risk of overexposure could impact your
-                          long-term gains.
-                        </p>
+                        <div className="space-y-3">
+                          {[
+                            ['Elon Musk', 'Sep 14, 2022'],
+                            ['Naughtius Maximus', 'Sep 13, 2022'],
+                            ['Lorde Edge', 'Nov 8, 2021'],
+                            ['Harry Bōlz', 'Feb 11, 2024'],
+                            ['Daddy DotCom', 'Jun 17, 2019'],
+                          ].map(([name, date]) => (
+                            <div
+                              key={date}
+                              className="flex items-center justify-between border-b border-black/10 pb-4"
+                            >
+                              <span>{name}</span>
+                              <span className="text-black/60">{date}</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <p className="text-sm text-black/60">
+                    Elon Musk has changed his Twitter name 128 times.
+                  </p>
                 </div>
               </div>
             </div>

@@ -173,7 +173,7 @@ export function TwitterChat() {
               e.key === 'Enter' && !e.shiftKey && handleSubmit(e)
             }
             placeholder="Enter a Twitter username to check history..."
-            className="min-h-[60px] w-full resize-none border-0 bg-transparent px-4 py-4 text-lg text-white placeholder:text-neutral-500 focus-visible:ring-0"
+            className="min-h-[60px] w-full resize-none border-0 bg-transparent px-4 py-4 text-lg text-white placeholder:text-white/50 focus-visible:ring-0"
           />
           {input && !isLoading && (
             <Button
@@ -181,14 +181,14 @@ export function TwitterChat() {
               size="icon"
               variant="ghost"
               onClick={handleClear}
-              className="absolute right-3 top-3 h-6 w-6 opacity-60 hover:opacity-100"
+              className="absolute right-3 top-3 h-6 w-6 text-white/60 hover:text-white"
             >
               <X className="h-4 w-4" />
             </Button>
           )}
           {isLoading && (
             <div className="absolute right-4 top-4">
-              <Loader2 className="h-4 w-4 animate-spin text-neutral-500" />
+              <Loader2 className="h-4 w-4 animate-spin text-[#FF4D4D]" />
             </div>
           )}
         </div>
@@ -201,7 +201,7 @@ export function TwitterChat() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="border-t border-white/[0.08]"
+            className="border-t border-white/[0.08] bg-gradient-to-r from-[#FF4D4D]/5 to-[#FFB347]/5"
           >
             <ScrollArea className="max-h-[600px] overflow-y-auto p-4">
               {hasAnyHistory(results) ? (
@@ -248,8 +248,8 @@ export function TwitterChat() {
                   animate={{ opacity: 1, y: 0 }}
                   className="flex flex-col items-center justify-center py-8 text-center"
                 >
-                  <div className="mb-4 rounded-full bg-white/5 p-3">
-                    <AlertCircle className="h-6 w-6 text-white/40" />
+                  <div className="mb-4 rounded-full bg-gradient-to-r from-[#FF4D4D]/10 to-[#FFB347]/10 p-3">
+                    <AlertCircle className="h-6 w-6 text-[#FF4D4D]" />
                   </div>
                   <h3 className="mb-2 text-lg font-medium text-white/80">
                     No History Found
@@ -270,7 +270,7 @@ export function TwitterChat() {
             exit={{ opacity: 0 }}
             className="border-t border-white/[0.08] p-4"
           >
-            <h3 className="mb-3 text-sm font-medium text-neutral-400">
+            <h3 className="mb-3 text-sm font-medium text-white/60">
               Recent Searches
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -280,7 +280,8 @@ export function TwitterChat() {
                   variant="ghost"
                   size="sm"
                   onClick={() => setInput(username)}
-                  className="rounded-full bg-white/5 px-3 py-1 text-sm hover:bg-white/10"
+                  className="rounded-full bg-gradient-to-r from-[#FF4D4D]/5 to-[#FFB347]/5 px-3 py-1 text-sm 
+                    hover:from-[#FF4D4D]/10 hover:to-[#FFB347]/10 hover:text-white"
                 >
                   @{username}
                 </Button>
@@ -310,7 +311,7 @@ function HistorySection({
       <motion.h3
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
-        className="flex items-center gap-2 text-lg font-medium"
+        className="flex items-center gap-2 text-lg font-medium text-white"
       >
         {title}
         <span className="text-sm text-white/40">({items.length})</span>
@@ -322,9 +323,10 @@ function HistorySection({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.05 }}
-            className="group flex items-center justify-between rounded-lg bg-white/5 px-4 py-2 transition-colors hover:bg-white/10"
+            className="group flex items-center justify-between rounded-lg bg-gradient-to-r from-[#FF4D4D]/5 to-[#FFB347]/5 
+              px-4 py-2 transition-colors hover:from-[#FF4D4D]/10 hover:to-[#FFB347]/10"
           >
-            <span className="break-all">{item.value}</span>
+            <span className="break-all text-white/80">{item.value}</span>
             <span className="ml-4 shrink-0 text-sm text-white/60">
               {new Intl.DateTimeFormat('en-US', {
                 year: 'numeric',

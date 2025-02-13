@@ -8,13 +8,13 @@ const stats = [
     label: 'Lightning speeds',
     value: '250ms',
     unit: 'avg.',
-    description: 'fern ai is powered by Helius Geyser Plugin & Jito.',
+    description: 'Dara is powered by Helius Geyser Plugin & Jito.',
   },
   {
     label: 'Get alpha quickly',
     value: '99%',
-    unit: 'faster',
-    description: 'Reduce the setup and onboarding & get straight to the alpha.',
+    unit: 'uptime',
+    description: 'Enjoy reliable service with 99.9% uptime.',
   },
   {
     label: 'Promised SLA',

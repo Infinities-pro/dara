@@ -148,12 +148,10 @@ export function HomeContent() {
         {/* Header Card */}
         <div className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-br from-[#FF4D4D]/5 via-[#FF8F3F]/5 to-[#FFB347]/5 p-6 shadow-2xl backdrop-blur-md transition-all duration-300 hover:border-white/[0.12]">
           <div className="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gradient-to-r from-[#FF4D4D] to-[#FFB347] opacity-20 blur-[50px] transition-opacity group-hover:opacity-30" />
-          <h3 className="text-2xl font-semibold">
-            Dara&apos;s got your back in the Solana world.
-          </h3>
-          <p className="text-white/60">
-            get token info, swap assets, set alerts, investigate, audit & more -
-            all in one.
+          <h1 className="text-4xl font-bold sm:text-6xl">Twitter Checker</h1>
+          <p className="text-lg text-white/60">
+            Check any Twitter username's history instantly - usernames, display
+            names, bios & more.
           </p>
         </div>
 

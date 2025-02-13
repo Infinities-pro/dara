@@ -28,11 +28,9 @@ export function HeroSection() {
     <main className="relative pb-20 pt-52">
       <div className="mx-auto max-w-7xl px-6">
         <BlurFade className="text-center">
-          <h1 className="animate-fade-in text-4xl font-bold tracking-tight md:text-6xl">
+          <h1 className="text-4xl font-bold sm:text-6xl">
             Your AI Copilot for{' '}
-            <span className="animate-gradient bg-300% bg-gradient-to-r from-[#FF4D4D] via-[#FF8F3F] to-[#FFB347] bg-clip-text text-transparent">
-              Solana Trading
-            </span>
+            <span className="text-[#FFB347]">Solana Trading</span>
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-lg text-white/60 transition-opacity duration-300 hover:text-white/80 md:text-xl">
             Get intelligent market insights, real-time analysis, and smart
@@ -44,17 +42,8 @@ export function HeroSection() {
               onClick={() => login()}
               className="group w-full px-8 py-3 text-lg font-medium transition-transform hover:scale-105 sm:w-auto"
             >
-              Start Trading
+              TRY IT FREE →
             </RainbowButton>
-            <Button
-              variant="outline"
-              className="w-full border-white/10 bg-white/5 px-8 py-3 text-lg font-medium text-white backdrop-blur-sm transition-all hover:scale-105 hover:border-white/20 hover:bg-white/10 sm:w-auto"
-              onClick={() =>
-                window.open('https://docs.heysolana.xyz', '_blank')
-              }
-            >
-              Read Docs
-            </Button>
           </div>
         </BlurFade>
       </div>
