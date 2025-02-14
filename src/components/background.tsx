@@ -40,11 +40,6 @@ export function Background() {
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.02]" />
 
       <GradientBlock />
-
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -left-1/2 top-1/4 h-[1000px] w-[1000px] animate-pulse bg-[#14F195] opacity-[0.015] blur-[100px]" />
-        <div className="absolute -right-1/2 bottom-1/4 h-[1000px] w-[1000px] animate-pulse bg-[#9945FF] opacity-[0.015] blur-[100px] delay-1000" />
-      </div>
     </div>
   );
 }

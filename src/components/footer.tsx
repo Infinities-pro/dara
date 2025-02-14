@@ -33,7 +33,7 @@ export function Footer() {
           {/* Right - Copyright and Social */}
           <div className="flex items-center gap-6">
             <span className="text-sm text-white/60">
-              © 2025 AskJimmy, Inc. All rights reserved.
+              © 2025 DARA Inc. All rights reserved.
             </span>
             <div className="flex items-center gap-4">
               <Link
