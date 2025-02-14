@@ -7,6 +7,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import AuthProviders from '@/components/provider-auth';
 import { ThemeProvider } from '@/components/provider-theme';
+import { Footer } from '@/components/footer';
 import { Toaster } from '@/components/ui/sonner';
 import { GA_TRACKING_ID } from '@/lib/gtag';
 import { cn } from '@/lib/utils';
@@ -76,10 +77,13 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <main className="sticky bottom-0 overflow-hidden md:overflow-visible">
-              {children}
-              <Toaster />
-            </main>
+            <div className="relative min-h-screen flex flex-col">
+              <main className="flex-grow">
+                {children}
+              </main>
+              <Footer />
+            </div>
+            <Toaster />
           </ThemeProvider>
         </AuthProviders>
         <Analytics />

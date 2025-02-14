@@ -1,7 +1,19 @@
-import { Stats } from '@/components/features';
+import { Background } from '@/components/background';
+import { Header } from '@/components/header';
 import { HeroSection } from '@/components/hero-section';
-import { LandingPage } from '@/components/landing-page';
+import { FeaturesSection } from '@/components/features-section';
+import { FaqSection } from '@/components/faq-section';
 
 export default function Home() {
-  return <LandingPage />;
+  return (
+    <div className="relative min-h-screen flex flex-col bg-[#07071C] text-white">
+      <Background />
+      <Header />
+      <main className="flex-grow">
+        <HeroSection />
+        <FeaturesSection />
+        <FaqSection />
+      </main>
+    </div>
+  );
 }
