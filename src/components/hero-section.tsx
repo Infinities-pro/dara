@@ -2,7 +2,6 @@
 
 import { useRouter } from 'next/navigation';
 import { useLogin } from '@privy-io/react-auth';
-
 import BlurFade from '@/components/ui/blur-fade';
 import { RainbowButton } from '@/components/ui/rainbow-button';
 
