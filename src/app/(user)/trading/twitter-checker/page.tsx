@@ -15,7 +15,7 @@ export default function TwitterCheckerPage() {
             <div className="inline-flex items-center rounded-full bg-gradient-to-r from-[#FF4D4D]/10 to-[#FFB347]/10 px-5 py-2">
               <Twitter className="mr-2 h-5 w-5 text-[#FF4D4D]" />
               <span className="bg-gradient-to-r from-[#FF4D4D] to-[#FFB347] bg-clip-text text-lg font-medium text-transparent">
-                Twitter Checker
+              Twitter Monitoring Agent
               </span>
             </div>
           </div>

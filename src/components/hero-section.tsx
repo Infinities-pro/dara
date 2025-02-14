@@ -38,7 +38,7 @@ export function HeroSection() {
               onClick={() => login()}
               className="group w-full px-8 py-3 text-lg font-medium transition-transform hover:scale-105 sm:w-auto"
             >
-              TRY IT FREE →
+              Early Access →
             </RainbowButton>
           </div>
         </BlurFade>
